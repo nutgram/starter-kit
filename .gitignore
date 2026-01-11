@@ -1,0 +1,5 @@
+/.idea/
+.env
+/cache/
+/vendor/
+composer.phar
