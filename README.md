@@ -45,7 +45,7 @@ This is a lightweight starter kit for building Telegram bots using the [Nutgram]
 #### Polling Mode
 To run the bot in polling mode (ideal for development), execute:
 ```bash
-php public/index.php
+php bot.php
 ```
 
 #### Webhook Mode
@@ -53,9 +53,12 @@ To use the webhook mode, point your web server's document root to the `public/` 
 
 Finally, you need to register your webhook URL with Telegram. You can do this by making an HTTP request (e.g., using `curl`) to the following address:
 ```bash
-curl "https://api.telegram.org/botYOUR_TOKEN/setWebhook?url=https://YOUR_DOMAIN"
+curl "https://api.telegram.org/botTOKEN/setWebhook?secret_token=WEBHOOK_TOKEN&url=https://YOUR_DOMAIN"
 ```
-Replace `YOUR_TOKEN` with your bot token and `https://YOUR_DOMAIN` with your actual webhook URL.
+Replace:
+- `WEBHOOK_TOKEN` with the same value you used in your `.env` file
+- `TOKEN` with the same value you used in your `.env` file
+- `https://YOUR_DOMAIN` with your actual webhook URL.
 
 ### Project Structure
 - `src/routes.php`: Register your commands, conversations, and handlers.

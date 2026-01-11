@@ -6,8 +6,6 @@ use SergiX44\Nutgram\Nutgram;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 use Symfony\Component\Cache\Psr16Cache;
 
-require_once('../vendor/autoload.php');
-
 //load env
 $dotenv = Dotenv::createImmutable(dirname(__DIR__));
 $dotenv->safeLoad();
