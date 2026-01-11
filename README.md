@@ -36,6 +36,7 @@ This is a lightweight starter kit for building Telegram bots using the [Nutgram]
    Edit `.env` and set your `TOKEN`:
    ```env
    TOKEN=your_telegram_bot_token_here
+   WEBHOOK_TOKEN=random_webhook_token
    ```
 
 ## Usage
@@ -56,9 +57,9 @@ Finally, you need to register your webhook URL with Telegram. You can do this by
 curl "https://api.telegram.org/botTOKEN/setWebhook?secret_token=WEBHOOK_TOKEN&url=https://YOUR_DOMAIN"
 ```
 Replace:
-- `WEBHOOK_TOKEN` with the same value you used in your `.env` file
 - `TOKEN` with the same value you used in your `.env` file
 - `https://YOUR_DOMAIN` with your actual webhook URL.
+- `WEBHOOK_TOKEN` with the same value you used in your `.env` file
 
 ### Project Structure
 - `src/routes.php`: Register your commands, conversations, and handlers.
