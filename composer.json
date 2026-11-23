@@ -9,13 +9,13 @@
   "homepage": "https://github.com/nutgram/starter-kit",
   "license": "MIT",
   "require": {
-    "php": "^8.2",
-    "nutgram/nutgram": "^4.40.0",
-    "vlucas/phpdotenv": "^5.6",
-    "symfony/cache": "^8.0"
+    "php": "^8.4",
+    "nutgram/nutgram": "^5.0",
+    "vlucas/phpdotenv": "^5.8",
+    "symfony/cache": "^8.1"
   },
   "require-dev": {
-    "pestphp/pest": "^4.0"
+    "pestphp/pest": "^5.0"
   },
   "autoload": {
     "psr-4": {
@@ -27,7 +27,7 @@
       "Nutgram\\StarterKit\\Tests\\": "tests/"
     }
   },
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "prefer-stable": true,
   "config": {
     "allow-plugins": {

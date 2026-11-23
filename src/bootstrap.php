@@ -23,6 +23,7 @@ $cache = new Psr16Cache(new FilesystemAdapter(directory: $cacheDir));
 
 //init nutgram
 $bot = new Nutgram($_ENV['TOKEN'], new Configuration(
+    botName: $_ENV['USERNAME'],
     clientTimeout: 15,
     cache: $cache,
 ));

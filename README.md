@@ -12,7 +12,7 @@ This is a lightweight starter kit for building Telegram bots using the [Nutgram]
 
 ## Requirements
 
-- PHP 8.2 or higher
+- PHP 8.4 or higher
 - Composer
 
 ## Usage
