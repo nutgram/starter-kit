@@ -17,7 +17,7 @@
 use SergiX44\Nutgram\Nutgram;
 
 if(PHP_SAPI !== 'cli') {
-    throw new Exception('This file can only be run from the command line.');
+    throw new \RuntimeException('This file can only be run from the command line.');
 }
 
 require_once(__DIR__.'/vendor/autoload.php');

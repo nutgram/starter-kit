@@ -18,13 +18,13 @@ use SergiX44\Nutgram\Nutgram;
 use SergiX44\Nutgram\RunningMode\Webhook;
 
 if(PHP_SAPI === 'cli') {
-    throw new Exception('This file can only be run from the web server.');
+    throw new \RuntimeException('This file can only be run from the web server.');
 }
 
 require_once(dirname(__DIR__).'/vendor/autoload.php');
 require_once(dirname(__DIR__).'/src/bootstrap.php');
 
-$webhook = new Webhook(secretToken: $_ENV['WEBHOOK_SECRET']);
+$webhook = new Webhook($_ENV['WEBHOOK_SECRET']);
 $webhook->setSafeMode(true);
 $bot->setRunningMode($webhook);
 

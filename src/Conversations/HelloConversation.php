@@ -7,14 +7,14 @@ use SergiX44\Nutgram\Nutgram;
 
 class HelloConversation extends Conversation
 {
-    public function start(Nutgram $bot)
+    public function start(Nutgram $bot): void
     {
         $bot->sendMessage('What is your name?');
         
         $this->next('getName');
     }
     
-    public function getName(Nutgram $bot)
+    public function getName(Nutgram $bot): void
     {
         $text = $bot->message()->text;
         
